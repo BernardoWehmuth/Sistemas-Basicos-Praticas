@@ -59,7 +59,4 @@ public abstract class Usuario {
 	
 
 	public abstract int getLimiteEmprestimos();
-	
-	
-	
 }
