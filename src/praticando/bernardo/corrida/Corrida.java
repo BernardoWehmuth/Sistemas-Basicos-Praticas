@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Corrida {
+	private String vencedor;
 	private List<Veiculo> participantes = new ArrayList<>();
 	
 	public void adicionarVeiculo(Veiculo veiculo) {
@@ -17,7 +18,6 @@ public class Corrida {
 	}
 	
 	public String determinarVencedor() {
-		String vencedor = null;
 		double maiorVelocidade = 0;
 		for(Veiculo veiculo : participantes) {
 			if(veiculo.getVelocidadeMaxima() > maiorVelocidade) {
